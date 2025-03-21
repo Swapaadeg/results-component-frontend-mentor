@@ -44,6 +44,9 @@ body {
     position: absolute;
     transform: translateX(-95%);
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .whitebox {
@@ -58,11 +61,10 @@ body {
 
 .circle {
     width: 180px;
-    height: 180px;
+    aspect-ratio: 1/1;
     background: linear-gradient(rgba(78, 33, 202, 0.534), hsla(241, 81%, 54%, 0.144));
     backdrop-filter: blur(10px);
     border-radius: 50%;
-    transform: translateX(35%);
 
 }
 .circle .score {
@@ -149,4 +151,47 @@ body {
 }
 .attribution {
     padding: 2rem;
+}
+
+@media screen and (max-width:1050px) {
+
+    .element {
+        transform: translateX(20%);
+    }
+    .bluebox {
+        width: 50%;
+    }
+
+    .whitebox {
+        width: 50%;
+    }
+}
+@media screen and (max-width:600px) {
+
+.element { 
+    transform: translateY(70%);
+    font-size: 12px;
+}
+
+.bluebox {
+    transform: translateY(-95%);
+    width: 100%;
+    height: 40vh;
+}
+.score {
+    font-size: 32px;
+    margin: 0;
+}
+.whitebox {
+    width: 100%;
+    height: 50vh;
+}
+.result {
+    width: 100%;
+}
+
+.attribution {
+    transform: translateY(330%);
+    margin-top: 0;
+}
 }
