@@ -1,0 +1,49 @@
+@font-face {
+    font-family: "HankenGrotesk";
+    src: url(../fonts/static/HankenGrotesk-Medium.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "HankenGrotesk";
+    background-color: hsl(221, 100%, 96%);
+}
+
+.element {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 25%;
+    
+}
+.bluebox {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    position: absolute;
+    transform: translateX(-95%);
+    z-index: 2;
+    height: 60vh;
+}
+
+.whitebox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: hsl(0, 0%, 100%);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+    z-index: 1;
+    height: 60vh;
+}
+
+
+
+
