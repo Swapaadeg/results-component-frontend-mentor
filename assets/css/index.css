@@ -3,6 +3,11 @@
     src: url(../fonts/static/HankenGrotesk-Medium.ttf);
 }
 
+@font-face {
+    font-family: "HankenGrotesk extra bold";
+    src: url(../fonts/static/HankenGrotesk-ExtraBold.ttf);
+}
+
 * {
     box-sizing: border-box;
 }
@@ -10,40 +15,63 @@
 body {
     font-family: "HankenGrotesk";
     background-color: hsl(221, 100%, 96%);
+    margin: 8%;
+    font-size: 18px;
 }
 
 .element {
     display: flex;
     justify-content: center;
+    transform: translate(10%);
 }
 
 .card {
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+    padding: 2rem
     
 }
 .bluebox {
-    display: flex;
-    flex-direction: column;
+    width: 21%;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 20px;
     position: absolute;
     transform: translateX(-95%);
     z-index: 2;
-    height: 60vh;
 }
 
 .whitebox {
-    display: flex;
-    flex-direction: column;
+    width: 25%;
     text-align: center;
     background-color: hsl(0, 0%, 100%);
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
     position: relative;
     z-index: 1;
-    height: 60vh;
 }
 
+.circle {
+    background: linear-gradient(rgba(78, 33, 202, 0.534), hsla(241, 81%, 54%, 0.144));
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    width: 60%;
+    margin-left: 20%;
+}
+.circle .score {
+    font-size: 64px;
+    font-family:"HankenGrotesk extra bold";
+    color: white;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.bluebox p, .bluebox h3 {
+    color: hsl(241, 100%, 89%);
+}
+
+.bluebox h2 {
+    color: white;
+}
 
 
 
