@@ -19,7 +19,7 @@ body {
     font-family: "HankenGrotesk";
     background-color: hsl(221, 100%, 96%);
     margin: 8%;
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 
 .element {
@@ -153,24 +153,24 @@ body {
     padding: 2rem;
 }
 
-@media screen and (max-width:1050px) {
+@media screen and (max-width:1230px) {
 
     .element {
         transform: translateX(20%);
     }
     .bluebox {
-        width: 50%;
+        width: 40%;
     }
 
     .whitebox {
-        width: 50%;
+        width: 40%;
     }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:728px) {
 
 .element { 
     transform: translateY(70%);
-    font-size: 12px;
+    font-size: 0.9rem;
 }
 
 .bluebox {
@@ -179,7 +179,7 @@ body {
     height: 40vh;
 }
 .score {
-    font-size: 32px;
+    font-size: 2rem;
     margin: 0;
 }
 .whitebox {
