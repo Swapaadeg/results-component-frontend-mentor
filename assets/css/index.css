@@ -2,7 +2,10 @@
     font-family: "HankenGrotesk";
     src: url(../fonts/static/HankenGrotesk-Medium.ttf);
 }
-
+@font-face {
+    font-family: "HankenGrotesk bold";
+    src: url(../fonts/static/HankenGrotesk-Bold.ttf);
+}
 @font-face {
     font-family: "HankenGrotesk extra bold";
     src: url(../fonts/static/HankenGrotesk-ExtraBold.ttf);
@@ -30,11 +33,11 @@ body {
     flex-direction: column;
     border-radius: 20px;
     text-align: center;
-    padding: 2rem
+    padding: 3%;
     
 }
 .bluebox {
-    width: 21%;
+    width: 25%;
     background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     border-radius: 20px;
     position: absolute;
@@ -44,18 +47,21 @@ body {
 
 .whitebox {
     width: 25%;
-    text-align: center;
     background-color: hsl(0, 0%, 100%);
     position: relative;
     z-index: 1;
+    padding-left: 3%;
+    gap: 1rem;
 }
 
 .circle {
+    width: 180px;
+    height: 180px;
     background: linear-gradient(rgba(78, 33, 202, 0.534), hsla(241, 81%, 54%, 0.144));
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(10px);
     border-radius: 50%;
-    width: 60%;
-    margin-left: 20%;
+    transform: translateX(20%);
+
 }
 .circle .score {
     font-size: 64px;
@@ -73,5 +79,66 @@ body {
     color: white;
 }
 
+.whitebox h3 {
+    color: hsl(224, 30%, 27%);
+    text-align: justify;
+}
 
+.result {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify;
+    height: 50px;
+    padding: 1rem;
+    border-radius: 15px;
+}
 
+.num {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.num .score {
+    color: hsl(224, 30%, 27%);
+    font-family: "HankenGrotesk bold";
+}
+
+.num .cent {
+    color: hsl(241, 100%, 89%);
+}
+
+.reaction {
+    background-color: hsla(0, 100%, 67%, 0.082);
+    color: hsl(0, 100%, 67%);
+}
+
+.memory {
+    background-color: hsla(39, 100%, 56%, 0.082);
+    color: hsl(39, 100%, 56%);
+}
+
+.verbal {
+    background-color: hsl(166, 100%, 37%, 0.082);
+    color: hsl(166, 100%, 37%);
+}
+
+.visual {
+    background-color: hsl(234, 85%, 45%, 0.082);
+    color: hsl(234, 85%, 45%);
+}
+
+.btn {
+    width: 100%;
+    height: 50px;
+    background-color: hsl(224, 30%, 27%);
+    text-decoration: none;
+    color: white;
+    align-content: center;
+    border-radius: 30px;
+    margin-top: 1rem;
+}
+
+.attribution {
+    padding: 2rem;
+}
